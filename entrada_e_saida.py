@@ -40,3 +40,24 @@ def multiplicacao_de_numeros():
 
 # Chama a função
 multiplicacao_de_numeros()
+
+
+#4 - Crie uma função que pede um número, divide por 2 e imprime o resultado. 
+#Exemplo de saída: "A divisão do número [numero] por dois é: [resultado] "
+
+
+def divisao_por_dois():
+    try:
+        # Solicita um número ao usuário
+        numero = float(input("Digite um número: "))
+        
+        # Realiza a divisão por 2
+        resultado = numero / 2
+        
+        # Imprime o resultado
+        print(f"A divisão do número {numero} por dois é: {resultado}")
+    except ValueError:
+        print("Por favor, insira um número válido.")
+
+# Chama a função
+divisao_por_dois()
