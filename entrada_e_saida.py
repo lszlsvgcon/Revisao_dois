@@ -18,3 +18,25 @@ def somar_numeros():
     resultado = num1 + num2
     print(f"A soma dos números é: {resultado}")
 somar_numeros()
+
+
+#3 - Crie uma função que pede dois números, faz a multiplicação deles e imprime o resultado.
+#Exemplo de saída: "O produto dos números é: [resultado] "
+
+
+def multiplicacao_de_numeros():
+    try:
+        # Solicita os números ao usuário
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        
+        # Calcula o produto dos números
+        produto = num1 * num2
+        
+        # Imprime o resultado
+        print(f"O produto dos números é: {produto}")
+    except ValueError:
+        print("Por favor, insira números válidos.")
+
+# Chama a função
+multiplicacao_de_numeros()
